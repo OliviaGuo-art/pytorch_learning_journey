@@ -42,3 +42,6 @@ for data in dataloader:
     #writer.add_images("output", output, step)
 
     step += 1
+
+
+writer.close()
