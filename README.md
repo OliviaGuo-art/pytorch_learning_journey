@@ -3,8 +3,8 @@
 入门阶段 PyTorch 学习记录
 
 ## 环境
-- Python 3.9
-- PyTorch 2.x
+- Python 3.13
+- PyTorch 2.8.0
 - 硬件：CPU
 
 ## 目录结构
@@ -17,7 +17,7 @@
 - 调参对比：学习率 0.01 vs 0.1，loss 曲线见 `loss_comparison.png`
 
 ### Loss 曲线
-![loss曲线](loss_comparison.png)
+![loss曲线](final_project/loss_comparison.png)
 
 ### 准确率曲线
-![acc曲线](accuracy.png)
+![acc曲线](final_project/accuracy.png)
