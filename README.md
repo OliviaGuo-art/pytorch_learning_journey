@@ -20,4 +20,4 @@
 ![loss曲线](final_project/loss_comparison.png)
 
 ### 准确率曲线
-![acc曲线](final_project/accuracy.png)
+![acc曲线](final_project/accuracy_img.png)
