@@ -6,10 +6,10 @@ from torch.utils.tensorboard import SummaryWriter   #一定要记得这个writer
 from torchvision import transforms
 
 
-image.path = "练手数据集/Data/train/bees/16838648_415acd9e3f.jpg"
+image.path = "../练手数据集/Data/train/bees/16838648_415acd9e3f.jpg"
 img = Image.open(image.path)
 
-writer = SummaryWriter("logs")
+writer = SummaryWriter("../logs")
 
 #把PIL或者numpy格式的图片都可以转为tensor形式  为什么python中要用tensor格式呢 事实上，查看tensor属性可以发现，它带有很多神经网络训练的参数
 tensor_trans = transforms.ToTensor()

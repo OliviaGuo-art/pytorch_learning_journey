@@ -23,7 +23,7 @@ class MyData(Dataset):
 
 
 #构建实例
-root_dir = "Dataset/hymenoptera_data/train"      #windows要改成/
+root_dir = "../Dataset/hymenoptera_data/train"  #windows要改成/
 ants_label_dir = "ants"
 bees_label_dir = "bees"
 ants_dataset = MyData(root_dir, ants_label_dir)

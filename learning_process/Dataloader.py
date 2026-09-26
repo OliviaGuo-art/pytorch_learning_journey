@@ -27,8 +27,8 @@ else:
 
 
 
-data_train = torchvision.datasets.CIFAR10("data(CIFAR10)", train= True, transform= torchvision.transforms.ToTensor(), download= True)
-data_test = torchvision.datasets.CIFAR10("data(CIFAR10)", train= False, transform= torchvision.transforms.ToTensor())
+data_train = torchvision.datasets.CIFAR10("../data(CIFAR10)", train= True, transform= torchvision.transforms.ToTensor(), download= True)
+data_test = torchvision.datasets.CIFAR10("../data(CIFAR10)", train= False, transform= torchvision.transforms.ToTensor())
 
 #一般训练集打乱，测试集不用打乱
 data_train_loader =  DataLoader(data_train, batch_size= 64, shuffle= True, num_workers=0, drop_last= True)
@@ -38,7 +38,7 @@ data_test_loader =  DataLoader(data_test, batch_size= 64, shuffle= False, num_wo
 
 
 #这里仅以测试集为例
-writer = SummaryWriter("dataloader")
+writer = SummaryWriter("../dataloader")
 #想做到每一步读入64张图片
 step = 0
 for epoch in range(2):       #epoch就是对于一个数据集，模型要训练几遍
@@ -51,7 +51,7 @@ writer.close()
 
 from tensorboard.backend.event_processing.event_accumulator import EventAccumulator
 
-ea = EventAccumulator("dataloader")
+ea = EventAccumulator("../dataloader")
 ea.Reload()
 
 print("所有 tag:", ea.Tags())

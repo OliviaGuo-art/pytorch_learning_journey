@@ -6,8 +6,8 @@ import numpy as np
 from PIL import Image
 
 
-writer = SummaryWriter("logs")   #就是随便起名字
-image_path = "练手数据集/Data/train/ants/0013035.jpg"
+writer = SummaryWriter("../logs")   #就是随便起名字
+image_path = "../练手数据集/Data/train/ants/0013035.jpg"
 img_PIL = Image.open(image_path)      #在控制台运行我们需要的行可以查看其属性，这里就发现它是PIL
 img_array = np.array(img_PIL)
 
